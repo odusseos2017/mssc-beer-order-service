@@ -5,8 +5,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 import guru.sfg.beer.order.service.domain.BeerOrderLine;
 import guru.sfg.beer.order.service.services.beer.BeerService;
-import guru.sfg.beer.order.service.web.model.BeerOrderLineDto;
 import guru.sfg.beer.order.service.web.model.beer.BeerDto;
+import guru.sfg.brewery.model.BeerOrderLineDto;
 
 import java.util.Optional;
 

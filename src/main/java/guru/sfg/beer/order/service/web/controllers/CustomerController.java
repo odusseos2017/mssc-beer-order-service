@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import guru.sfg.beer.order.service.services.CustomerService;
-import guru.sfg.beer.order.service.web.model.CustomerPagedList;
+import guru.sfg.brewery.model.CustomerPagedList;
 
 /**
  * Created by jt on 3/7/20.

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import guru.sfg.beer.order.service.domain.Customer;
 import guru.sfg.beer.order.service.repositories.CustomerRepository;
 import guru.sfg.beer.order.service.web.mappers.CustomerMapper;
-import guru.sfg.beer.order.service.web.model.CustomerPagedList;
+import guru.sfg.brewery.model.CustomerPagedList;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
