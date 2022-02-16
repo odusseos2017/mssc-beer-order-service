@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 import guru.sfg.beer.order.service.domain.BeerOrderLine;
 import guru.sfg.beer.order.service.services.beer.BeerService;
-import guru.sfg.beer.order.service.web.model.beer.BeerDto;
+import guru.sfg.brewery.model.BeerDto;
 import guru.sfg.brewery.model.BeerOrderLineDto;
 
 import java.util.Optional;
@@ -36,7 +36,7 @@ public abstract class BeerOrderLineMapperDecorator implements BeerOrderLineMappe
 
         beerDtoOptional.ifPresent(beerDto -> {
             orderLineDto.setBeerName(beerDto.getBeerName());
-            orderLineDto.setBeerStyle(beerDto.getBeerStyle().name());
+            orderLineDto.setBeerStyle(beerDto.getBeerStyle());
             orderLineDto.setPrice(beerDto.getPrice());
             orderLineDto.setBeerId(beerDto.getId());
         });

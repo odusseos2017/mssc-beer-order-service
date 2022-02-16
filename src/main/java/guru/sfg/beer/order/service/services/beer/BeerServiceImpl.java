@@ -5,7 +5,7 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import guru.sfg.beer.order.service.web.model.beer.BeerDto;
+import guru.sfg.brewery.model.BeerDto;
 
 import java.util.Optional;
 import java.util.UUID;

@@ -8,6 +8,8 @@ import org.springframework.jms.support.converter.MappingJackson2MessageConverter
 import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.jms.support.converter.MessageType;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 /**
  * Created by jt on 2019-07-17.
  */
@@ -22,10 +24,12 @@ public class JmsConfig {
     public static final String DEALLOCATE_ORDER_QUEUE = "deallocate-order" ;
 
     @Bean
-    public MessageConverter messageConverter(){
+    public MessageConverter messageConverter(ObjectMapper objectMapper){
+    	
         MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
         converter.setTargetType(MessageType.TEXT);
         converter.setTypeIdPropertyName("_type");
+        converter.setObjectMapper(objectMapper);
         return converter;
     }
 }
